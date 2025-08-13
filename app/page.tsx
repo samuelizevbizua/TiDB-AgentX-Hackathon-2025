@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
   return (
@@ -23,17 +23,18 @@ export default function Home() {
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Button asChild className="bg-primary text-primary-foreground shadow-sm hover:opacity-90 rounded-2xl">
-            <Link href="#get-started">
-              Get started
-            </Link>
+          <Button
+            asChild
+            className="bg-primary text-primary-foreground rounded-2xl shadow-sm hover:opacity-90"
+          >
+            <Link href="#get-started">Get started</Link>
           </Button>
-          <Button asChild variant="outline" className="hover:bg-accent hover:text-accent-foreground">
-            <Link
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+          <Button
+            asChild
+            variant="outline"
+            className="hover:bg-accent hover:text-accent-foreground"
+          >
+            <Link href="https://github.com/" target="_blank" rel="noreferrer noopener">
               View GitHub
             </Link>
           </Button>
